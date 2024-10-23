@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARLDEC -Puthumala</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+    <header>
+        <h1>EARLDEC </h1>
+    </header>
+
+    <section class="content-section">
+        <h2>AREA:PUTHUMALA</h2>
+        <div class="full-box">
+   <p>Alert: <span id="ALERT">Loading...</span></p>
+    <p>Soil Moisture: <span id="SOILMOISTURE">Loading...</span></p>
+    <p>Slanting: <span id="SLANTING">Loading...</span></p>
+    <p>Total Number of People Residing in this Area: 400</p>
+    <p>Number of People in the Rescue Camp (GLPS SCHOOL): <span id="PINCAMP">Loading...</span></p>
+    <p>Number of People Moved to Safe Place: 150</p>
+    <p>Number of People Missing: <span id="MISSINGP">Loading...</span></p>
+    <p>Number of Rescue Team Active: 6</p>
+    <p>Messages from Devices: <span id="DMESSAGE">NO MESSAGES</span></p>
+    <p>Messages from Rescue Team: <span id="RMESSGAE">NO MESSAGES</span></p>
+    </div>
+
+    
+    
+    <h4>DEVICE SEARCH</h4>
+    <div class="full-box">
+    <form id="accessForm">
+        <label for="accessCode">Enter Device Code:</label>
+        <input type="number" id="accessCode" placeholder="Device Code" required />
+        <button type="submit">Submit</button>
+      </form>
+
+    <p id="errorMessage"></p>
+</div>
+    </section>
+
+    <script type="module" src="firebase-script.js"></script>
+
+</body>
+</html>
