@@ -165,7 +165,7 @@ onValue(alert, (snapshot1) => {
     const accessCode = parseInt(document.getElementById('accessCode').value); 
     const errorMessage = document.getElementById('errorMessage');
   
-    if (accessCode === 12) {
+    if (accessCode === 234) {
    
       window.location.href = "device.html";  
     } else {
