@@ -19,8 +19,8 @@ const alert = ref(database, 'MAIN/alert');
 const soil = ref(database, 'MAIN/soilMoisture'); 
 const mpu = ref(database, 'MAIN/slanting'); 
 const house = ref(database, 'HOUSE/DATA'); 
-const rescuecamp = ref(database, 'RESCUE CAMP/DATA'); 
-const rescueteam = ref(database, 'RESCUE TEAM/DATA'); 
+const rescuecamp = ref(database, 'RESCUECAMP/DATA'); 
+const rescueteam = ref(database, 'RESCUETEAM/DATA'); 
 
 
 
