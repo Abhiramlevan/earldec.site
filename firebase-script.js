@@ -71,17 +71,13 @@ onValue(alert, (snapshot1) => {
   
     const campdataElement = document.getElementById('PINCAMP');
     const missingElement = document.getElementById('MISSINGP');
-     if (campdata === 16) {
+     if (campdata === 15) {
       campdataElement.innerText = "38";
       missingElement.innerText = "147";
      
-    } else if (campdata === 17) {
+    } else if (campdata === 16) {
       campdataElement.innerText = "39";
       missingElement.innerText = "146";
-      
-    }  else  {
-      campdataElement.innerText = "35";
-      missingElement.innerText = "150";
       
     }
 
@@ -130,17 +126,17 @@ onValue(alert, (snapshot1) => {
       teamElement.innerText = "(6)LOCATION RECEIVED";
   
       
-    } else if (housedata === 24) {
+    } else if (teamdata === 24) {
       teamElement.innerText = "(6)MISSION COMPLETE";
      
-    } else if (housedata === 20) {
+    } else if (teamdata === 20) {
       teamElement.innerText = "(6)MESSAGE1";
       
-    } else if (housedata === 21) {
+    } else if (teamdata  === 21) {
       teamElement.innerText = "(6)MESSAGE2";
       
     } 
-    else if (housedata === 22) {
+    else if (teamdata  === 22) {
       teamElement.innerText = "(6)MESSAGE3";
       
     } 
