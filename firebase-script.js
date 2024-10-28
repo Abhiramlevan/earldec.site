@@ -17,7 +17,7 @@ const database = getDatabase(app);
 
 const alert = ref(database, 'MAIN/alert'); 
 const soil = ref(database, 'MAIN/soilMoisture'); 
-const mpu = ref(database, 'MAIN/slanting'); 
+const mpu = ref(database, 'MAIN/mpu'); 
 const house = ref(database, 'HOUSE/DATA'); 
 const rescuecamp = ref(database, 'RESCUE_CAMP/DATA'); 
 const rescueteam = ref(database, 'RESCUE_TEAM/DATA'); 
@@ -71,14 +71,17 @@ onValue(alert, (snapshot1) => {
   
     const campdataElement = document.getElementById('PINCAMP');
     const missingElement = document.getElementById('MISSINGP');
-     if (campdata === 15) {
+     if (campdata === 16) {
       campdataElement.innerText = "38";
       missingElement.innerText = "147";
      
-    } else if (campdata === 16) {
+    } else if (campdata === 15) {
       campdataElement.innerText = "39";
       missingElement.innerText = "146";
       
+    }else{
+      campdataElement.innerText = "35";
+      missingElement.innerText = "150";
     }
 
     
@@ -122,31 +125,21 @@ onValue(alert, (snapshot1) => {
   
     const teamElement = document.getElementById('RMESSAGE');
   
-    if(teamdata === 25 ) {
-      teamElement.innerText = "(6)LOCATION RECEIVED";
-  
-      
+    if (teamdata === 25) {
+        teamElement.innerText = "(6)LOCATION RECEIVED";
     } else if (teamdata === 24) {
-      teamElement.innerText = "(6)MISSION COMPLETE";
-     
+        teamElement.innerText = "(6)MISSION COMPLETE";
     } else if (teamdata === 20) {
-      teamElement.innerText = "(6)MESSAGE1";
-      
-    } else if (teamdata  === 21) {
-      teamElement.innerText = "(6)MESSAGE2";
-      
-    } 
-    else if (teamdata  === 22) {
-      teamElement.innerText = "(6)MESSAGE3";
-      
-    } 
+        teamElement.innerText = "(6)MESSAGE1";
+    } else if (teamdata === 21) {
+        teamElement.innerText = "(6)MESSAGE2";
+    } else if (teamdata === 22) {
+        teamElement.innerText = "(6)MESSAGE3";
+    }
+}, (error) => {
+    console.error("Error fetching team data:", error);
+});
 
-    
-
-  
-  }, (error) => {
-    console.error("Error fetching teamdata data:", error);
-  });
 
 
 
