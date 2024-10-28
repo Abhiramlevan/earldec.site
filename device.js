@@ -14,7 +14,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-const rescuecamp = ref(database, 'RESCUE CAMP/DATA');
+const rescuecamp = ref(database, 'RESCUE_CAMP/DATA');
 
 onValue(rescuecamp, (snapshot1) => {
     const campdata = snapshot1.val();
@@ -23,12 +23,12 @@ onValue(rescuecamp, (snapshot1) => {
     const campdataElement = document.getElementById('npeople');
     const devicestatusElement = document.getElementById('status');
     
-     if (campdata === 36) {
+     if (campdata === 16) {
       campdataElement.innerText = "3";
       devicestatusElement.innerText ="IN RESCUE CAMP";
       
      
-    } else if (campdata === 38) {
+    } else if (campdata === 15) {
       campdataElement.innerText = "4";
       devicestatusElement.innerText ="IN RESCUE CAMP";
       
