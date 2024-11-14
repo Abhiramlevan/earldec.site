@@ -2,13 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebas
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDblDcFPdxVkkjQwEks9YxA47b2_rvGOyY",
-  authDomain: "eldrec-8c131.firebaseapp.com",
-  databaseURL: "https://eldrec-8c131-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "eldrec-8c131",
-  storageBucket: "eldrec-8c131.appspot.com",
-  messagingSenderId: "1068738203161",
-  appId: "1:1068738203161:web:6248b663a62856761d6488"
+  apiKey: "AIzaSyBeE2CjTeiEIG0LgzQtdqegbYTWMDByydc",
+  authDomain: "earldec.firebaseapp.com",
+  databaseURL: "https://earldec-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "earldec",
+  storageBucket: "earldec.firebasestorage.app",
+  messagingSenderId: "588032667392",
+  appId: "1:588032667392:web:e0ddad26c0b3d29af60de5"
 };
 
 const app = initializeApp(firebaseConfig);
