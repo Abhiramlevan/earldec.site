@@ -2,54 +2,65 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: url('2XNB5EF-1550x804.jpg'); 
+  background-image: url('images/2XNB5EF-1550x804.jpg');
   background-size: cover;
   background-position: center;
-  color: #ECDFCC; 
+  color: #ECDFCC;
 }
+
 header {
   display: flex;
-  justify-content: center; 
-  padding: 20px 0; 
+  justify-content: center;
+  padding: 20px 0;
   background-color: #1E201E;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
+
 header h1 {
-  font-size: 36px; 
-  margin: 0; 
+  font-size: 36px;
+  margin: 0;
 }
 
 .content-section {
   padding: 50px 20px;
-  text-align: left; 
-  background-color: rgba(30, 32, 30, 0.7); 
-  min-height: calc(100vh - 80px); 
+  text-align: left;
+  background-color: rgba(30, 32, 30, 0.7);
+  min-height: calc(100vh - 80px);
 }
 
 .content-section h2 {
-  font-size: 28px; 
-  margin-bottom: 20px; 
+  font-size: 28px;
+  margin-bottom: 20px;
 }
+
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 5px; 
+  justify-content: flex-start; 
+}
+
 
 .full-box {
   background-color: #3C3D37;
-  color: #fff; 
-  padding: 5px 10px; 
+  color: #fff;
+  padding: 10px 20px; 
   margin-bottom: 10px;
-  border-radius: 5px; 
-  display: inline-block; 
-  font-size: 16px; 
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  min-width: 200px; 
 }
 
 .full-box:hover {
-  transform: translateY(-3px); 
+  transform: translateY(-3px);
   background-color: rgba(60, 61, 55, 1);
 }
-
 
 
 form {
@@ -73,7 +84,7 @@ input[type="number"] {
 }
 
 button {
-  background-color: #3C3D37; 
+  background-color: #3C3D37;
   color: #ECDFCC;
   border: none;
   border-radius: 5px;
@@ -92,7 +103,7 @@ button:hover {
 }
 
 #errorMessage {
-  color: #FF4D4D; 
+  color: #FF4D4D;
   margin-top: 10px;
   font-size: 1em;
   text-align: center;
