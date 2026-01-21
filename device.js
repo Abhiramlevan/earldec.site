@@ -1,15 +1,15 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
- const firebaseConfig = {
-    apiKey: "AIzaSyBno6ZZbdWGwHIYh5Fvp_9kXsUGqEShDQg",
-    authDomain: "earldecnew.firebaseapp.com",
-    databaseURL: "https://earldecnew-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "earldecnew",
-    storageBucket: "earldecnew.firebasestorage.app",
-    messagingSenderId: "726385217086",
-    appId: "1:726385217086:web:6c1efb2f78eabe25258b6f"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyBgvbJx1oTHoVbqWpohH5WlCoMVQKksLK8",
+  authDomain: "dismech-c3d38.firebaseapp.com",
+  databaseURL: "https://dismech-c3d38-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "dismech-c3d38",
+  storageBucket: "dismech-c3d38.firebasestorage.app",
+  messagingSenderId: "968726257894",
+  appId: "1:968726257894:web:dd46e86ec297ca08895b27"
+};
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
@@ -71,3 +71,4 @@ onValue(rescuecamp, (snapshot1) => {
   document.getElementById('button3').addEventListener('click', () => {
     writeDataToFirebase(3); 
   });
+
