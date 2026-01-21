@@ -16,7 +16,7 @@ const database = getDatabase(app);
 
 
 const alert = ref(database, 'MAIN/alert'); 
-const soil = ref(database, 'MAIN/soil'); 
+const soil = ref(database, 'MAIN/rain'); 
 const mpu = ref(database, 'MAIN/mpu'); 
 const house = ref(database, 'HOUSE/DATA'); 
 const rescuecamp = ref(database, 'RESCUE_CAMP/DATA'); 
@@ -162,4 +162,5 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
