@@ -47,10 +47,10 @@ onValue(alert, (snapshot1) => {
   console.error("Error fetching alert1 data:", error);
 });
 
-  onValue(soil, (snapshot2) => {
+  onValue(rain, (snapshot2) => {
     const soildata = snapshot2.val();
     console.log("soidata  fetched from Firebase:", soildata); 
-   document.getElementById('SOILMOISTURE').innerText = soildata || "No data available";
+   document.getElementById('rain').innerText = soildata || "No data available";
 
  }, (error) => {
     console.error("Error fetching soildata data:", error);
