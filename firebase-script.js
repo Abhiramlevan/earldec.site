@@ -48,9 +48,9 @@ onValue(alert, (snapshot1) => {
 });
 
   onValue(rain, (snapshot2) => {
-    const soildata = snapshot2.val();
-    console.log("soidata  fetched from Firebase:", soildata); 
-   document.getElementById('rain').innerText = soildata || "No data available";
+    const rain = snapshot2.val();
+    console.log("soidata  fetched from Firebase:", rain); 
+   document.getElementById('rain').innerText = rain || "No data available";
 
  }, (error) => {
     console.error("Error fetching soildata data:", error);
@@ -162,6 +162,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
