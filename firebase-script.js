@@ -137,6 +137,9 @@ onValue(alert, (snapshot1) => {
         teamElement.innerText = "(6)MESSAGE2";
     } else if (teamdata === 22) {
         teamElement.innerText = "(6)MESSAGE3";
+    }else{
+          campdataElement.innerText = "35";
+      missingElement.innerText = "150";
     }
 }, (error) => {
     console.error("Error fetching team data:", error);
@@ -164,6 +167,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
