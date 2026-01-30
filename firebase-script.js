@@ -69,15 +69,12 @@ onValue(alert, (snapshot1) => {
     const campdata = snapshot4.val();
     console.log("campdata data fetched from Firebase:", campdata); 
   
-    const campdataElement = document.getElementById('PINCAMP');
-    const missingElement = document.getElementById('MISSINGP');
      if (campdata === 16) {
       campdataElement.innerText = "38";
       missingElement.innerText = "147";
      
     } else if (campdata === 15) {
-      campdataElement.innerText = "39";
-      missingElement.innerText = "146";
+     
       
     }else{
       campdataElement.innerText = "35";
@@ -124,11 +121,16 @@ onValue(alert, (snapshot1) => {
     console.log("team data fetched from Firebase:", teamdata); 
   
     const teamElement = document.getElementById('RMESSAGE');
+    
+    const campdataElement = document.getElementById('PINCAMP');
+    const missingElement = document.getElementById('MISSINGP');
   
     if (teamdata === 25) {
         teamElement.innerText = "(6)LOCATION RECEIVED";
     } else if (teamdata === 24) {
         teamElement.innerText = "(6)MISSION COMPLETE";
+         campdataElement.innerText = "39";
+        missingElement.innerText = "146";
     } else if (teamdata === 20) {
         teamElement.innerText = "(6)MESSAGE1";
     } else if (teamdata === 21) {
@@ -162,6 +164,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
