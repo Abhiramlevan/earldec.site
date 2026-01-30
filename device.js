@@ -20,6 +20,8 @@ const rescueteam = ref(database, 'RESCUE_TEAM/DATA');
     console.log("team data fetched from Firebase:", teamdata); 
   
     const teamElement = document.getElementById('RMESSAGE');
+   const campdataElement = document.getElementById('npeople');
+    const devicestatusElement = document.getElementById('status');
     
     
       if (teamdata === 24) {
@@ -66,5 +68,6 @@ const rescueteam = ref(database, 'RESCUE_TEAM/DATA');
   document.getElementById('button3').addEventListener('click', () => {
     writeDataToFirebase(3); 
   });
+
 
 
