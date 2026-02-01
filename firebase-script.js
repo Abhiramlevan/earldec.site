@@ -1,4 +1,4 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+eimport { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
 const firebaseConfig = {
@@ -41,6 +41,8 @@ onValue(alert, (snapshot1) => {
   } else if  (alertData1 === 4) {
     alertMessageElement.innerText = "RED ALERT";
    
+  }else{
+    alertMessageElement.innerText = "GREEN ALERT";
   }
 
 }, (error) => {
@@ -50,7 +52,7 @@ onValue(alert, (snapshot1) => {
   onValue(rain, (snapshot2) => {
     const rain = snapshot2.val();
     console.log("soidata  fetched from Firebase:", rain); 
-   document.getElementById('rain').innerText = rain || "No data available";
+   document.getElementById('rain').innerText = rain ;
 
  }, (error) => {
     console.error("Error fetching soildata data:", error);
@@ -163,6 +165,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
