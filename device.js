@@ -59,9 +59,7 @@ onValue(rescuecamp, (snapshot1) => {
         alert("Error updating data: " + error.message);
       });
   };
-window.addEventListener("load", () => {
-  writeDataToFirebase(0);
-});
+
   document.getElementById('button1').addEventListener('click', () => {
     writeDataToFirebase(1); 
   });
@@ -73,6 +71,7 @@ window.addEventListener("load", () => {
   document.getElementById('button3').addEventListener('click', () => {
     writeDataToFirebase(3); 
   });
+
 
 
 
