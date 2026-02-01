@@ -41,8 +41,6 @@ onValue(alert, (snapshot1) => {
   } else if  (alertData1 === 4) {
     alertMessageElement.innerText = "RED ALERT";
    
-  }else{
-    alertMessageElement.innerText = "GRgyygyN ALERT";
   }
 
 }, (error) => {
@@ -165,6 +163,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
