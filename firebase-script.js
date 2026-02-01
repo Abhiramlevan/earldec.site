@@ -74,7 +74,8 @@ onValue(alert, (snapshot1) => {
       missingElement.innerText = "147";
      
     } else if (campdata === 15) {
-     
+     campdataElement.innerText = "39";
+     missingElement.innerText = "146";
       
     }else{
       campdataElement.innerText = "35";
@@ -129,17 +130,12 @@ onValue(alert, (snapshot1) => {
         teamElement.innerText = "(6)LOCATION RECEIVED";
     } else if (teamdata === 24) {
         teamElement.innerText = "(6)MISSION COMPLETE";
-         campdataElement.innerText = "39";
-        missingElement.innerText = "146";
     } else if (teamdata === 20) {
         teamElement.innerText = "(6)MESSAGE1";
     } else if (teamdata === 21) {
         teamElement.innerText = "(6)MESSAGE2";
     } else if (teamdata === 22) {
         teamElement.innerText = "(6)MESSAGE3";
-    }else{
-          campdataElement.innerText = "35";
-      missingElement.innerText = "150";
     }
 }, (error) => {
     console.error("Error fetching team data:", error);
@@ -167,6 +163,7 @@ onValue(alert, (snapshot1) => {
       errorMessage.textContent = "NO DEVICE FOUND.";
     }
   });
+
 
 
 
