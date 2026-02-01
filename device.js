@@ -13,24 +13,27 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const rescueteam = ref(database, 'RESCUE_TEAM/DATA'); 
+const rescuecamp = ref(database, 'RESCUE_CAMP/DATA');
 
- onValue(rescueteam, (snapshot6) => {
-    const teamdata = snapshot6.val();
-    console.log("team data fetched from Firebase:", teamdata); 
+
+onValue(rescuecamp, (snapshot1) => {
+    const campdata = snapshot1.val();
+    console.log("campdata data fetched from Firebase:", campdata); 
   
-    const teamElement = document.getElementById('RMESSAGE');
-   const campdataElement = document.getElementById('npeople');
+    const campdataElement = document.getElementById('npeople');
     const devicestatusElement = document.getElementById('status');
     
-    
-      if (teamdata === 24) {
+     if (campdata === 16) {
       campdataElement.innerText = "3";
       devicestatusElement.innerText ="IN RESCUE CAMP";
       
-     } 
+     
+    } else if (campdata === 15) {
+      campdataElement.innerText = "4";
+      devicestatusElement.innerText ="IN RESCUE CAMP";
       
-     else  {
+      
+    }  else  {
       campdataElement.innerText = "4";
       devicestatusElement.innerText ="MISSING";
 
@@ -68,6 +71,7 @@ const rescueteam = ref(database, 'RESCUE_TEAM/DATA');
   document.getElementById('button3').addEventListener('click', () => {
     writeDataToFirebase(3); 
   });
+
 
 
 
