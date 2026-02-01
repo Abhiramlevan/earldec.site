@@ -60,17 +60,21 @@ onValue(rescuecamp, (snapshot1) => {
       });
   };
 
-  document.getElementById('button1').addEventListener('click', () => {
+  if(document.getElementById('button1').addEventListener('click', () => {
     writeDataToFirebase(1); 
+    setTimeout(() => writeDataToFirebase(0), 300);
   });
   
   document.getElementById('button2').addEventListener('click', () => {
     writeDataToFirebase(2); 
+    setTimeout(() => writeDataToFirebase(0), 300);
   });
   
   document.getElementById('button3').addEventListener('click', () => {
     writeDataToFirebase(3); 
+    setTimeout(() => writeDataToFirebase(0), 300);
   });
+
 
 
 
